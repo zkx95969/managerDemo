@@ -2,6 +2,8 @@ package com.shh.controller.sys;
 
 import com.shh.pojo.sys.Menu;
 import com.shh.service.sys.MenuService;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,10 +22,11 @@ import java.util.List;
 public class MenuController {
     @Autowired
     private MenuService menuService;
-
+    private final Logger logger = LogManager.getLogger(MenuController.class);
     @RequestMapping("/findAllMenu")
     @ResponseBody
     public List<Menu> findAllMenu(){
+        logger.info("哎呀我去了，哈哈哈哈");
         return menuService.findAllMenu();
     }
     @RequestMapping("/addMenu")
