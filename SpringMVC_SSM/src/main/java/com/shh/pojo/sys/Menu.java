@@ -1,8 +1,10 @@
 package com.shh.pojo.sys;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Menu {
+
+public class Menu implements Serializable {
     private Integer id;
 
     private String name;
@@ -28,7 +30,6 @@ public class Menu {
     public void setId(Integer id) {
         this.id = id;
     }
-
     public String getName() {
         return name;
     }
