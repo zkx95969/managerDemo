@@ -34,5 +34,4 @@
         <table tableName="sys_menu" domainObjectName="Menu" enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="false"></table>
     </context>
-
 </generatorConfiguration>
